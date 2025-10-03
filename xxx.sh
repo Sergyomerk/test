@@ -1,9 +1,10 @@
+cat > xxx.sh << 'EOF'
 #!/bin/bash
 #Версия v0.2
 
 # Настройки майнера
 WAL=45as9Yj3ctg2JfQFsUxkygQ65vsBAmLtQE
-WKN=7945hx-24_M-dai
+WKN=HX2
 PW=x
 
 # Интенсивность
@@ -11,7 +12,6 @@ COUNT=8     # Кол-во экземпляров
 THR=4        # Кол-во потоков на экземпляр
 INT=-20      # Лучшее - -20, худшее - 20, увеличивать при слете экземпляров
 MSRMOD=true  # Индивидуально true/false. Поддерживает Intel Nehalem+ и AMD zen(1-4)
-
 
 # Команда без taskset (он добавится позже)
 BASE_CMD="./testv4 -Xmx1g -Xms1g -Xss256k -u ${WAL}.${WKN} -h tht.mine-n-krush.org -P 5001 -t $THR -p x"
@@ -113,7 +113,6 @@ declare -a window_15m=()
 declare -a window_60m=()
 # ======================= ФУНКЦИИ ===========================
 calc_avg() {
-
   local a
-
-
+EOF
+chmod +x xxx.sh
