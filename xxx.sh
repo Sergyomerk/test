@@ -14,7 +14,7 @@ MSRMOD=true  # Индивидуально true/false. Поддерживает I
 
 
 # Команда без taskset (он добавится позже)
-BASE_CMD="./RabbitMinerV4 -Xmx1g -Xms1g -Xss256k -u ${WAL}.${WKN} -h tht.mine-n-krush.org -P 5001 -t $THR -p x"
+BASE_CMD="./testv4 -Xmx1g -Xms1g -Xss256k -u ${WAL}.${WKN} -h tht.mine-n-krush.org -P 5001 -t $THR -p x"
 
 #Отладчик
 log_path="/mnt/ramlogdisk" # Если отказываться от ramdiskа, то изменить на /var/log
@@ -115,4 +115,5 @@ declare -a window_60m=()
 calc_avg() {
 
   local a
+
 
