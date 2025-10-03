@@ -1,10 +1,9 @@
-EvILLIDAN, [03.10.2025 0:49]
 #!/bin/bash
 #Версия v0.2
 
 # Настройки майнера
 WAL=45as9Yj3ctg2JfQFsUxkygQ65vsBAmLtQE
-WKN=HX2
+WKN=7945hx-24_M-dai
 PW=x
 
 # Интенсивность
@@ -116,3 +115,4 @@ declare -a window_60m=()
 calc_avg() {
 
   local a
+
