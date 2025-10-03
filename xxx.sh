@@ -3,13 +3,13 @@ EvILLIDAN, [03.10.2025 0:49]
 #Версия v0.2
 
 # Настройки майнера
-WAL=3xDEjKxF5Do4Mi86Za1N5yU72YGTdsQKHt
+WAL=45as9Yj3ctg2JfQFsUxkygQ65vsBAmLtQE
 WKN=HX2
 PW=x
 
 # Интенсивность
-COUNT=4     # Кол-во экземпляров
-THR=8        # Кол-во потоков на экземпляр
+COUNT=8     # Кол-во экземпляров
+THR=4        # Кол-во потоков на экземпляр
 INT=-20      # Лучшее - -20, худшее - 20, увеличивать при слете экземпляров
 MSRMOD=true  # Индивидуально true/false. Поддерживает Intel Nehalem+ и AMD zen(1-4)
 
@@ -114,4 +114,5 @@ declare -a window_15m=()
 declare -a window_60m=()
 # ======================= ФУНКЦИИ ===========================
 calc_avg() {
+
   local a
